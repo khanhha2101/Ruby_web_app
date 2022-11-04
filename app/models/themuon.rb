@@ -1,0 +1,2 @@
+class Themuon < ApplicationRecord
+end

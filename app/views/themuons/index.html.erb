@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Themuons</h1>
+
+<div id="themuons">
+  <% @themuons.each do |themuon| %>
+    <%= render themuon %>
+    <p>
+      <%= link_to "Show this themuon", themuon %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New themuon", new_themuon_path %>

@@ -1,0 +1,77 @@
+<%= form_with(model: themuon) do |form| %>
+  <% if themuon.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(themuon.errors.count, "error") %> prohibited this themuon from being saved:</h2>
+
+      <ul>
+        <% themuon.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :mahs, style: "display: block" %>
+    <%= form.text_field :mahs %>
+  </div>
+
+  <div>
+    <%= form.label :hoten, style: "display: block" %>
+    <%= form.text_field :hoten %>
+  </div>
+
+  <div>
+    <%= form.label :lop, style: "display: block" %>
+    <%= form.text_field :lop %>
+  </div>
+
+  <div>
+    <%= form.label :masach, style: "display: block" %>
+    <%= form.text_field :masach %>
+  </div>
+
+  <div>
+    <%= form.label :tensach, style: "display: block" %>
+    <%= form.text_field :tensach %>
+  </div>
+
+  <div>
+    <%= form.label :tentacgia, style: "display: block" %>
+    <%= form.text_field :tentacgia %>
+  </div>
+
+  <div>
+    <%= form.label :tusach, style: "display: block" %>
+    <%= form.text_field :tusach %>
+  </div>
+
+  <div>
+    <%= form.label :sobm, style: "display: block" %>
+    <%= form.text_field :sobm %>
+  </div>
+
+  <div>
+    <%= form.label :ngaymuon, style: "display: block" %>
+    <%= form.text_field :ngaymuon %>
+  </div>
+
+  <div>
+    <%= form.label :ngaytra, style: "display: block" %>
+    <%= form.text_field :ngaytra %>
+  </div>
+
+  <div>
+    <%= form.label :songay, style: "display: block" %>
+    <%= form.text_field :songay %>
+  </div>
+
+  <div>
+    <%= form.label :ghichu, style: "display: block" %>
+    <%= form.text_field :ghichu %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

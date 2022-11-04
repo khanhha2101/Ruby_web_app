@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @themuon %>
+
+<div>
+  <%= link_to "Edit this themuon", edit_themuon_path(@themuon) %> |
+  <%= link_to "Back to themuons", themuons_path %>
+
+  <%= button_to "Destroy this themuon", @themuon, method: :delete %>
+</div>
